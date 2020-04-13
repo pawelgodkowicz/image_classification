@@ -42,7 +42,7 @@ image = cv2.imread(args['image'])
 image = imutils.resize(image, width=500)
 
 print('[INFO] Displaying image ...')
-cv2.putText(img=image, text=f'{labels[idx]} - {y_pred[idx] * 100:.2f}%',
+cv2.putText(img=image, text=f'{labels[idx]}',
             org=(10, 25), fontFace=cv2.FONT_HERSHEY_SIMPLEX, fontScale=0.8,
             color=(205, 133, 63), thickness=2)
 
