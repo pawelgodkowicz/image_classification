@@ -94,8 +94,8 @@ with open(r'output\mlb.pickle', 'wb') as file:
 
 print('[INFO] Data split...')
 X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=10)
-print(f'[INFO] Rozmiar danych treningowych: {X_train.shape}')
-print(f'[INFO] Rozmiar danych testowych: {X_test.shape}')
+print(f'[INFO] Training dataset size: {X_train.shape}')
+print(f'[INFO] Test dataset size: {X_test.shape}')
 
 print(f'[INFO] Construction of the generator...')
 train_datagen = ImageDataGenerator(
